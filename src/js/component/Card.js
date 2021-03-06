@@ -3,43 +3,51 @@ import PropTypes from "prop-types";
 
 function Card(props) {
 	return (
-		<div className="row">
+		<div className="row d-flex flex-block">
 			<div className="col">
-				<div className="card p-5 bg-dark">
+				<div className="card p-5 bg-dark border-light">
 					<div className="card-body text-white text-center">
-						<i className="far fa-clock"></i>
+						<i className="fa-3x far fa-clock"></i>
 					</div>
 				</div>
 			</div>
 
 			<div className="col">
-				<div className="card p-5 bg-dark">
+				<div className="card p-5 bg-dark border-light">
 					<div className="card-body text-white text-center">
-						{props.second1 % 10}
+						<h2 className="font-weight-bold">
+							{props.second1 % 10}
+						</h2>
 					</div>
 				</div>
 			</div>
 
 			<div className="col">
-				<div className="card p-5 bg-dark">
+				<div className="card p-5 bg-dark border-light">
 					<div className="card-body text-white text-center">
-						{props.second2 % 10}
+						<h2 className="font-weight-bold">
+							{props.second2 % 10}
+						</h2>
 					</div>
 				</div>
 			</div>
 
 			<div className="col">
-				<div className="card p-5 bg-dark">
+				<div className="card p-5 bg-dark border-light">
 					<div className="card-body text-white text-center">
-						{props.second3 % 10}
+						<h2 className="font-weight-bold">
+							{props.second3 % 10}
+						</h2>
 					</div>
 				</div>
 			</div>
 
 			<div className="col">
-				<div className="card p-5 bg-dark">
+				<div className="card p-5 bg-dark border-light">
 					<div className="card-body text-white text-center">
-						{props.second4 % 10}
+						<h2 className="font-weight-bold">
+							{props.second4 % 10}
+						</h2>
 					</div>
 				</div>
 			</div>
