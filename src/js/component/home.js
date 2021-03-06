@@ -1,24 +1,24 @@
-import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import React, { useEffect } from "react";
+import Card from "./Card";
+import PropTypes from "prop-types";
 
 //create your first component
-export function Home() {
+export function Home(props) {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="m-2 p-3 bg-dark">
+			<Card
+				second1={props.second1}
+				second2={props.second2}
+				second3={props.second3}
+				second4={props.second4}
+			/>
 		</div>
 	);
 }
+
+Home.propTypes = {
+	second1: PropTypes.number,
+	second2: PropTypes.number,
+	second3: PropTypes.number,
+	second4: PropTypes.number
+};
