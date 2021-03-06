@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Card(props) {
 	return (
-		<div className="row d-flex flex-block">
+		<div className="row">
 			<div className="col">
 				<div className="card p-5 bg-dark border-light">
 					<div className="card-body text-white text-center">
